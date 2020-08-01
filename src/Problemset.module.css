@@ -1,0 +1,37 @@
+.root {
+  display: inline-block;
+  padding-top: 50px;
+  text-decoration: none;
+  padding-right: 200px;
+}
+.subject {
+  margin: 0.4em 0.4em 0.4em 0;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.87);
+}
+.gridContainer {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.gridItem {
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
+  margin: 5px;
+  border-radius: 0.30769231rem;
+  border: 1px solid #ddd;
+  background-color: #ddd;
+  text-align: center;
+  padding: 5px;
+  width: 130px;
+  height: 25px;
+  transition: 100ms;
+}
+.gridItem:hover {
+  background-color: rgb(202, 202, 202);
+}
+.gridItem div {
+  color: rgb(50, 50, 50);
+  display: inline-block;
+}

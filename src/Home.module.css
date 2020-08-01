@@ -1,10 +1,30 @@
 .root {
   display: inline-block;
-  padding-top: 100px;
 }
-div p {
+.box1 {
+  display: inline-block;
+}
+.box2 {
+  padding-right: 100px;
+  display: inline-block;
+}
+.box3 {
+  padding-right: 100px;
+  display: inline-block;
+}
+.box1 p {
   display: inline-block;
   color: #1bb9b7;
+  font-size: 22.1px;
+}
+.box2 p {
+  display: inline-block;
+  color: #09c;
+  font-size: 22.1px;
+}
+.box3 p {
+  display: inline-block;
+  color: #f2711c;
   font-size: 22.1px;
 }
 .text {
@@ -18,10 +38,10 @@ div p {
   display: block;
   background-color: #4183c4;
   content: "";
-  height: 2px;
+  height: 1px;
   width: 0px;
   position: relative;
-  transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.3s;
 }
 .text:hover::after {
   width: 100%;

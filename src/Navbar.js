@@ -9,7 +9,7 @@ import graduationcapicon from "./graduationcapicon.png";
 export const Navbar = () => {
   return (
     <div className={styles.root}>
-      <NavLink to="/">
+      <NavLink to="/dashboard">
         <img
           src="https://cdn.quera.ir/images/logo/logo-q.0-3aee17faf53e.svg"
           alt="quera logo"
