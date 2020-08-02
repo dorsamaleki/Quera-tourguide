@@ -1,0 +1,47 @@
+.root {
+  display: inline-block;
+  padding-top: 50px;
+  text-decoration: none;
+  padding-right: 200px;
+}
+.menu1 {
+  border-bottom: 1px solid lightgrey;
+  padding-bottom: 10px;
+}
+.menu {
+  display: inline-block;
+  padding-right: 300px;
+}
+.contest {
+  display: inline-block;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 0.8rem;
+  cursor: pointer;
+  text-align: center;
+  padding: 5px;
+  margin: 5px;
+}
+.contest:hover {
+  border-radius: 0.30769231rem;
+  border: 1px solid #ddd;
+  background-color: #ddd;
+}
+.menu2 {
+  margin: 10px;
+  padding: 20px;
+
+  border: 1px solid lightgrey;
+  border-top: 2px solid #a333c8;
+  box-shadow: 0 1px 2px 0 rgba(34, 36, 38, 0.15);
+  border-radius: 0.30769231rem;
+}
+.menu3 {
+  margin: 10px;
+  padding: 15px;
+  border-radius: 0.30769231rem;
+  border: 1px solid lightgrey;
+}
+.menu3 div {
+  display: inline-block;
+}

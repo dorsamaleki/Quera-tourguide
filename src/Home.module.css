@@ -1,5 +1,6 @@
 .root {
   display: inline-block;
+  padding-right: 200px;
 }
 .box1 {
   display: inline-block;

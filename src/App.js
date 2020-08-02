@@ -3,8 +3,9 @@ import { Navbar } from "./Navbar";
 import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Home } from "./Home";
-import { Overview } from "./Overview.js";
+
 import { Problemset } from "./Problemset";
+import { Contest } from "./Contest";
 
 const App = () => {
   return (
@@ -14,11 +15,12 @@ const App = () => {
         <Route path="/dashboard">
           <Home />
         </Route>
-        <Route path="./overview">
-          <Overview />
-        </Route>
+
         <Route path="/problemset">
           <Problemset />
+        </Route>
+        <Route path="/contest">
+          <Contest />
         </Route>
       </Switch>
     </Router>
