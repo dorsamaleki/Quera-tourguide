@@ -2,7 +2,10 @@ import React from "react";
 import styles from "./Contest.module.css";
 import coffeicon from "./coffeeicon.png";
 import { NavLink } from "react-router-dom";
+import { Getcontest } from "./Getcontest";
+import { Showcontest } from "./Showcontest";
 export const Contest = () => {
+  const contests = Getcontest();
   return (
     <div className={styles.root}>
       <div className={styles.menu1}>
@@ -24,12 +27,21 @@ export const Contest = () => {
         </div>
       </div>
       <div className={styles.menu2}>مسابقات در حال اجرا</div>
-      <div className={styles.menu3}>
+      <div className={styles.menu3gridcontainer}>
         <div>نام مسابقه</div>
         <div>زمان تا شروع</div>
         <div>زمان مسابقه</div>
         <div>#سوالات</div>
         <div>#شرکت کنندگان</div>
+      </div>
+      <div className={styles.menu4}>
+        {contests.map((contest, index) => {
+          return (
+            <div>
+              <Showcontest key={index} {...contest} />
+            </div>
+          );
+        })}
       </div>
     </div>
   );
