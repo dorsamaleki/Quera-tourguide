@@ -1,5 +1,6 @@
 export const Getcontest = () => [
   {
+    id: 100,
     name: " مهارت‌سنجی Career Days",
     date: "۱۰ مرداد ۱۳۹۹ ساعت ۱۱:۰۵",
     time: "دقیقه۸ساعت",
@@ -7,6 +8,7 @@ export const Getcontest = () => [
     participants: 2424,
   },
   {
+    id: 101,
     name: "مهارت‌سنجی Career Days - آزمایشی",
     date: "۷ مرداد ۱۳۹۹ ساعت ۱۹:۰۵",
     time: "دقیقه5ساعت",
@@ -14,6 +16,7 @@ export const Getcontest = () => [
     participants: 2421,
   },
   {
+    id: 102,
     name: "مهارت‌سنشی",
     date: "۷ مرداد ",
     time: "ده5ساعت",

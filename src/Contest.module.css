@@ -1,5 +1,6 @@
 .root {
   display: inline-block;
+
   padding-top: 50px;
   text-decoration: none;
   padding-right: 200px;
@@ -38,17 +39,39 @@
   border-radius: 0.30769231rem;
 }
 .menu3gridcontainer {
+  background: #f9fafb;
   display: grid;
   grid-template-columns: 300px 200px auto auto auto;
-  margin: 10px;
+  margin: 10px 10px 0px 10px;
   padding: 15px;
-  border-radius: 0.30769231rem;
+  border-radius: 0.30769231rem 0.30769231rem 0 0;
   border: 1px solid lightgrey;
 }
 
 .menu4 {
-  margin: 10px;
+  margin: 0px 10px 10px 10px;
   padding: 15px;
-  border-radius: 0.30769231rem;
+  border-radius: 0 0 0.30769231rem 0.30769231rem;
+
   border: 1px solid lightgrey;
+}
+.sidebar {
+  display: inline-block;
+  position: absolute;
+  top: 120px;
+  padding-right: 20px;
+}
+.top {
+  border-bottom: 1px solid lightgrey;
+  padding-bottom: 10px;
+}
+.sidebargridcontainer {
+  display: grid;
+  grid-template-columns: 60px 180px auto;
+  text-align: center;
+  margin: 10px 10px 0px 10px;
+  padding: 15px;
+  border-radius: 0.30769231rem 0.30769231rem 0 0;
+  border: 1px solid lightgrey;
+  background: #f9fafb;
 }

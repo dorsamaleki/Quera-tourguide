@@ -6,6 +6,7 @@ import { Home } from "./Home";
 
 import { Problemset } from "./Problemset";
 import { Contest } from "./Contest";
+import { Showcontestassignments } from "./Showcontestassignments.js";
 
 const App = () => {
   return (
@@ -21,6 +22,9 @@ const App = () => {
         </Route>
         <Route path="/contest">
           <Contest />
+        </Route>
+        <Route path="/a:id/problems">
+          <Showcontestassignments />
         </Route>
       </Switch>
     </Router>
