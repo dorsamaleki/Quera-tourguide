@@ -23,7 +23,7 @@ const App = () => {
         <Route path="/contest">
           <Contest />
         </Route>
-        <Route path="/a:id/problems">
+        <Route path="/contest:id/problems">
           <Showcontestassignments />
         </Route>
       </Switch>

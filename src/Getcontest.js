@@ -6,6 +6,7 @@ export const Getcontest = () => [
     time: "دقیقه۸ساعت",
     numberofquestions: 7,
     participants: 2424,
+    questions: "bhjbhj",
   },
   {
     id: 101,

@@ -1,8 +1,10 @@
 .root {
-  display: inline-block;
-
-  padding-top: 50px;
+  background-color: #eee;
+}
+.sidebar {
+  background-color: white;
+  width: 18%;
+  height: 500px;
+  border-left: 1px solid #ddd;
   text-decoration: none;
-  padding-right: 200px;
-  width: 850px;
 }

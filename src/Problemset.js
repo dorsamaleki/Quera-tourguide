@@ -1,7 +1,9 @@
 import React from "react";
 import styles from "./Problemset.module.css";
 import { NavLink } from "react-router-dom";
+import { Getcontest } from "./Getcontest";
 export const Problemset = () => {
+  const contests = Getcontest();
   let selected = false;
   return (
     <div className={styles.root}>
@@ -27,6 +29,16 @@ export const Problemset = () => {
             <div>المپیاد</div>
           </NavLink>
         </div>
+      </div>
+      <div>
+        {contests.map((contest) => {
+          return (
+            <div>
+              {contest.name}
+              {contest.questions}
+            </div>
+          );
+        })}
       </div>
       {console.log(selected)}
     </div>
