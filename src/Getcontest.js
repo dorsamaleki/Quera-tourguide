@@ -6,7 +6,14 @@ export const Getcontest = () => [
     time: "دقیقه۸ساعت",
     numberofquestions: 7,
     participants: 2424,
-    questions: "bhjbhj",
+    questions: [
+      "نوشابه خنک",
+      "افراز توان دار",
+      "گراف سفید و سیاه",
+      "تربچین",
+      "استخدام در ترب",
+      "زمین ترب",
+    ],
   },
   {
     id: 101,
