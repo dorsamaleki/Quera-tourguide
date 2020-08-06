@@ -6,7 +6,7 @@ export const Showcontest = (props) => {
     <div className={styles.gridcontainer}>
       <div>
         {props.name}
-        <div>{props.questions}</div>
+
         <br />
 
         <NavLink to={"/contest" + props.id.toString() + "/problems"}>

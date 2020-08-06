@@ -13,6 +13,7 @@ export const Getcontest = () => [
       "تربچین",
       "استخدام در ترب",
       "زمین ترب",
+      "در جستجوی ترب ",
     ],
   },
   {
@@ -22,6 +23,15 @@ export const Getcontest = () => [
     time: "دقیقه5ساعت",
     numberofquestions: 5,
     participants: 2421,
+    questions: [
+      "بازی یک، سه، پنچ",
+      "چاپگر",
+      "خط شکسته",
+      "نعلم کو؟!",
+      "جاستیفای",
+      "مسابقه پیچیده",
+      "داده‌داری",
+    ],
   },
   {
     id: 102,
@@ -30,5 +40,6 @@ export const Getcontest = () => [
     time: "ده5ساعت",
     numberofquestions: 5,
     participants: 2421,
+    questions: ["کلید چراغ", "سلام سلام خداحافظ", "فرش دست‌باف", "آدرس‌یابی"],
   },
 ];

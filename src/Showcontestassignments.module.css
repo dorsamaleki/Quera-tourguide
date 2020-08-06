@@ -8,3 +8,7 @@
   border-left: 1px solid #ddd;
   text-decoration: none;
 }
+.q {
+  display: grid;
+  grid-template-columns: auto;
+}
