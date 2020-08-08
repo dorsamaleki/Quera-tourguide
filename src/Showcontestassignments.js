@@ -18,7 +18,7 @@ export const Showcontestassignments = () => {
       <div className={styles.sidebar}>
         <div>
           {contest.questions.map((co) => (
-            <div>{co}</div>
+            <div>{co.name}</div>
           ))}
         </div>
       </div>

@@ -4,6 +4,11 @@
   text-decoration: none;
   padding-right: 200px;
 }
+.right {
+  display: inline-block;
+  height: 100%;
+  vertical-align: top;
+}
 .subject {
   margin: 0.4em 0.4em 0.4em 0;
   font-weight: bold;
@@ -34,4 +39,41 @@
 .gridItem div {
   color: rgb(50, 50, 50);
   display: inline-block;
+}
+
+.left {
+  display: inline-block;
+}
+.gridcontainer1 {
+  display: grid;
+  grid-template-columns: 150px 150px 150px 250px 70px;
+  background: #f9fafb;
+
+  margin: 10px 10px 0px 10px;
+  padding: 15px;
+  border-radius: 0.30769231rem 0.30769231rem 0 0;
+  border: 1px solid lightgrey;
+}
+.gridcontainer1 div {
+  text-align: center;
+}
+.menu2 {
+  margin: 0px 10px 0px 10px;
+  border: 1px solid lightgrey;
+}
+
+.gridcontainer2 {
+  display: grid;
+  grid-template-columns: 150px 150px 150px 250px 70px;
+  border-bottom: 1px solid lightgrey;
+  padding: 15px;
+}
+.gridcontainer2:nth-child(even) {
+  background-color: #f9fafb;
+}
+.gridcontainer2 div {
+  text-align: center;
+}
+.name {
+  color: #4183c4;
 }
