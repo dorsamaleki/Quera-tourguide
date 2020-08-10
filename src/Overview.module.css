@@ -1,0 +1,58 @@
+.root {
+  display: inline-block;
+  padding-top: 50px;
+  text-decoration: none;
+  padding-right: 200px;
+}
+.dropbox {
+  width: 200px;
+  height: 47px;
+  font-size: 1rem;
+  border: 0.5px solid #ddd;
+  border-radius: 0.30769231rem;
+  padding-right: 20px;
+}
+.line1 {
+  width: 900px;
+  margin: 10px 0 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+.class1 {
+  width: 270px;
+  height: 300px;
+  display: inline-block;
+  box-shadow: 0 1px 2px 0 rgba(34, 36, 38, 0.15);
+  border-radius: 0.30769231rem;
+  border: 1px solid #ddd;
+}
+.class1 img {
+  width: 270px;
+  height: 150px;
+  border-radius: 0.30769231rem;
+}
+.subject {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.87);
+}
+.name {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.4);
+}
+.gridcontainer {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 10px;
+}
+.members {
+  text-align: right;
+  color: rgba(0, 0, 0, 0.4);
+}
+.date {
+  text-align: end;
+  color: rgba(0, 0, 0, 0.4);
+}
+.line2 {
+  width: auto;
+  margin: 10px 0 10px 0;
+  border-bottom: 1px solid #ddd;
+}

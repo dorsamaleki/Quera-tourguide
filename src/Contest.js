@@ -33,6 +33,14 @@ export const Contest = () => {
           </div>
         </div>
         <div className={styles.menu2}>مسابقات در حال اجرا</div>
+        <div className={styles.menu3gridcontainer}>
+          <div>نام مسابقه</div>
+          <div>زمان تا شروع</div>
+          <div>زمان مسابقه</div>
+          <div>#سوالات</div>
+          <div>#شرکت کنندگان</div>
+        </div>
+        <br />
         <div className={styles.menu2}>مسابقات گذشته</div>
         <div className={styles.menu3gridcontainer}>
           <div>نام مسابقه</div>

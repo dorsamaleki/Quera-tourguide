@@ -9,7 +9,7 @@ export const Showcontest = (props) => {
 
         <br />
 
-        <NavLink to={"/contest" + props.id.toString() + "/problems"}>
+        <NavLink to={"/contest" + props.id.toString() + "/problems/"}>
           <div className={styles.button}> ورود به مسابقه</div>
         </NavLink>
       </div>
