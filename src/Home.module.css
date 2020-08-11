@@ -2,31 +2,70 @@
   display: inline-block;
   padding-right: 200px;
 }
-.box1 {
+.boxcontainer {
+  display: grid;
+  grid-template-columns: 500px 300px;
+}
+
+.gridcontainerbox1 {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.boxtop {
+  padding: 20px 20px 0 20px;
+
+  display: grid;
+  grid-template-columns: 300px auto;
+}
+.item2 {
+  text-align: end;
+}
+.box1bottom {
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid lightgrey;
+  border-top: 2px solid #1bb9b7;
+  box-shadow: 0 1px 2px 0 rgba(34, 36, 38, 0.15);
+  border-radius: 0.30769231rem;
+}
+.text6 {
+  color: #1bb9b7;
+  font-size: 22.1px;
   display: inline-block;
 }
 .box2 {
-  padding-right: 100px;
-  display: inline-block;
+  width: 500px;
 }
-.box3 {
-  padding-right: 100px;
-  display: inline-block;
+
+.gridcontainerbox2 {
+  display: grid;
+  grid-template-columns: 100px 100px 100px 100px;
 }
-.box1 p {
-  display: inline-block;
-  color: #1bb9b7;
-  font-size: 22.1px;
-}
-.box2 p {
-  display: inline-block;
+.text7 {
   color: #09c;
   font-size: 22.1px;
-}
-.box3 p {
   display: inline-block;
+}
+.box2bottom {
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid lightgrey;
+  border-top: 2px solid #09c;
+  box-shadow: 0 1px 2px 0 rgba(34, 36, 38, 0.15);
+  border-radius: 0.30769231rem;
+}
+.text8 {
   color: #f2711c;
   font-size: 22.1px;
+  display: inline-block;
+}
+.box3bottom {
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid lightgrey;
+  border-top: 2px solid #f2711c;
+  box-shadow: 0 1px 2px 0 rgba(34, 36, 38, 0.15);
+  border-radius: 0.30769231rem;
 }
 .text {
   cursor: pointer;
@@ -34,6 +73,8 @@
   color: #4183c4;
   font-size: 0.8rem;
   text-decoration: none;
+  display: inline-block;
+  text-align: end;
 }
 .text::after {
   display: block;
@@ -46,4 +87,23 @@
 }
 .text:hover::after {
   width: 100%;
+}
+
+.text1 {
+  color: #4183c4;
+}
+.text2 {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 0.8rem;
+  text-decoration: none;
+  text-align: center;
+}
+.text3 {
+  color: #f2711c;
+}
+.text4 {
+  color: #dc4040;
+}
+.text5 {
+  color: #25c257;
 }
