@@ -15,7 +15,11 @@ export const Home = () => {
         <div className={styles.box1}>
           <div className={styles.boxtop}>
             <div>
-              <img src={universityiconcolored} alt="university icon" />
+              <img
+                src={universityiconcolored}
+                alt="university icon"
+                className={styles.image}
+              />
               <div className={styles.text6}>آخرین کلاس های من</div>
             </div>
             <div className={styles.item2}>
@@ -46,7 +50,11 @@ export const Home = () => {
         <div className={styles.box2}>
           <div className={styles.boxtop}>
             <div>
-              <img src={codeiconcolored} alt="code icon" />
+              <img
+                src={codeiconcolored}
+                alt="code icon"
+                className={styles.image}
+              />
               <div className={styles.text7}> تمرین کنید</div>
             </div>
             <div className={styles.item2}>
@@ -73,7 +81,11 @@ export const Home = () => {
         <div className={styles.box3}>
           <div className={styles.boxtop}>
             <div>
-              <img src={coffeeiconcolored} alt="code icon" />
+              <img
+                src={coffeeiconcolored}
+                alt="code icon"
+                className={styles.image}
+              />
               <div className={styles.text8}>مهارت خود را بسنجید</div>
             </div>
             <div className={styles.item2}>
