@@ -4,6 +4,10 @@
   text-decoration: none;
   padding-right: 320px;
 }
+.gridContainer {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
 .class1 {
   width: 450px;
   height: 350px;
@@ -105,11 +109,20 @@
 .text:hover::after {
   width: 100%;
 }
-.box2 {
+.topbox2 {
   padding: 20px;
 }
 .text2 {
   color: #f2711c;
   font-size: 22.1px;
   display: inline-block;
+}
+.box2 {
+  width: 350px;
+  height: 350px;
+
+  border: 1px solid lightgrey;
+  border-top: 2px solid #f2711c;
+  box-shadow: 0 1px 2px 0 rgba(34, 36, 38, 0.15);
+  border-radius: 0.30769231rem;
 }
