@@ -1,0 +1,141 @@
+.root {
+  display: inline-block;
+
+  text-decoration: none;
+}
+
+.gridContainer {
+  padding-right: 320px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.class1 {
+  width: 450px;
+  height: 350px;
+  display: inline-block;
+  box-shadow: 0 1px 2px 0 rgba(34, 36, 38, 0.15);
+  border-radius: 0.30769231rem;
+  border: 1px solid #ddd;
+  border-top: 2px solid #1bb9b7;
+}
+.top {
+  padding: 20px;
+}
+.image {
+  width: 22.1px;
+  height: auto;
+}
+.text1 {
+  color: #1bb9b7;
+  font-size: 22.1px;
+  display: inline-block;
+}
+.name {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.87);
+  font-weight: 700;
+  font-size: 20px;
+  padding: 10px;
+}
+.subject {
+  text-align: center;
+  color: rgb(50, 50, 50);
+  padding: 10px;
+}
+.line1 {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  line-height: 0.1em;
+  margin: 10px 0 20px;
+}
+
+.line1 span {
+  background: #fff;
+  padding: 0 10px;
+}
+.gridContainer1 {
+  display: grid;
+  grid-template-columns: auto auto;
+  text-align: center;
+}
+.member1 {
+  color: #09c;
+  font-size: 30px;
+  font-weight: 400;
+}
+.member2 {
+  color: #25c257;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.line2 {
+  width: auto;
+  margin: 10px 0 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+.gridContainer2 {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  text-align: center;
+}
+.number1 {
+  color: #767676;
+}
+.number2 {
+  color: #f2711c;
+}
+.number3 {
+  color: #dc4040;
+}
+.text {
+  cursor: pointer;
+  display: inline-block;
+  color: #4183c4;
+  font-size: 0.8rem;
+  text-decoration: none;
+
+  text-align: center;
+}
+.text::after {
+  display: block;
+  background-color: #4183c4;
+  content: "";
+  height: 1px;
+  width: 0px;
+  position: relative;
+  transition: all ease-in-out 0.3s;
+}
+.text:hover::after {
+  width: 100%;
+}
+
+.text2 {
+  color: #f2711c;
+  font-size: 22.1px;
+  display: inline-block;
+}
+.box2 {
+  width: 300px;
+  height: 300px;
+  margin-right: 20px;
+  border: 1px solid lightgrey;
+  border-top: 2px solid #f2711c;
+  box-shadow: 0 1px 2px 0 rgba(34, 36, 38, 0.15);
+  border-radius: 0.30769231rem;
+}
+.text3 {
+  color: rgb(0, 153, 204);
+  font-size: 22.1px;
+  display: inline-block;
+}
+.box3 {
+  width: 400px;
+  height: 400px;
+  margin-right: 20px;
+  border: 1px solid lightgrey;
+  border-top: 2px solid #09c;
+  box-shadow: 0 1px 2px 0 rgba(34, 36, 38, 0.15);
+  border-radius: 0.30769231rem;
+}

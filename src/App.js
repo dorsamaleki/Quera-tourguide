@@ -10,6 +10,9 @@ import { Showcontestassignments } from "./Showcontestassignments.js";
 import { Assignmentcontent } from "./Assignmentcontent";
 import { Overview } from "./Overview.js";
 import { Courses } from "./Courses";
+import { Write } from "./Write";
+import { Classpage } from "./Classpage";
+import { Note } from "./Note";
 
 const App = () => {
   return (
@@ -29,14 +32,24 @@ const App = () => {
         <Route path="/contest">
           <Contest />
         </Route>
-        <Route path="/contest:id/problems/">
+        <Route path="/contest:id/problems">
           <Showcontestassignments />
         </Route>
-        <Route path="/contest:id/problems/:id">
+        <Route path="/contest:id/problems:id">
           <Assignmentcontent />
         </Route>
-        <Route path="/course:id">
+        <Route path="/course/:id">
           <Courses />
+          <Route path="/course/:id/write">
+            <Write />
+          </Route>
+        </Route>
+
+        <Route path="/course:id/note:id">
+          <Note />
+        </Route>
+        <Route path="/course:id/class">
+          <Classpage />
         </Route>
       </Switch>
     </Router>

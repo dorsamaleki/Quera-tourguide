@@ -1,68 +1,58 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import { useParams, NavLink } from "react-router-dom";
 import { Getclass } from "./Getclass";
 import styles from "./Courses.module.css";
-import universityiconcolored from "./universityiconcolored.png";
-import stariconorange from "./stariconorange.png";
+
+import universityiconblue from "./universityiconblue.png";
+import pencilicon from "./pencilicon.png";
 export const Courses = () => {
   const classes = Getclass();
   let { id } = useParams();
   const courses = classes.find((courses) => courses.id.toString() === id);
   return (
     <div className={styles.root}>
+      {console.log("o")}
       {console.log({ courses })}
-      <div className={styles.gridContainer}>
-        <div>
-          <div className={styles.topclass1}>
-            <img
-              src={universityiconcolored}
-              alt="university icon"
-              className={styles.image}
-            />
-            <div className={styles.text1}>کلاس در یک نگاه</div>
-          </div>
-          <div className={styles.class1}>
-            {classes.map((co) => (
-              <div>
-                <div className={styles.name}>{co.name}</div>
-                <div className={styles.subject}>{co.professor}</div>
-                <br />
-                <div className={styles.line1}>
-                  <span>دستیاران آموزشی</span>
+      <div className={styles.sidebar}>
+        {classes.map((co) => (
+          <div>
+            <div className={styles.top}>
+              <NavLink to={"/course" + co.id.toString() + "/class"}>
+                <div className={styles.classbutton}>
+                  <img
+                    src={universityiconblue}
+                    alt="university icon"
+                    className={styles.image}
+                  />
+                  <div className={styles.text1}> کلاس</div>
                 </div>
-                <div className={styles.subject}>{co.TA}</div>
+              </NavLink>
 
-                <div className={styles.line2}></div>
-                <div className={styles.gridContainer1}>
-                  <div className={styles.member1}>{co.members}</div>
-                  <div className={styles.member2}>4</div>
-                  <div>تعداد اعضا</div>
-                  <div>تعداد نوشته ها</div>
+              <NavLink to={"/course/" + co.id.toString() + "/write"}>
+                <div className={styles.writebutton}>
+                  <img
+                    src={pencilicon}
+                    alt="pencil icon"
+                    className={styles.image}
+                  />
+                  <div className={styles.text1}> نوشته جدید </div>
                 </div>
-                <br />
-                <div className={styles.gridContainer2}>
-                  <div className={styles.number1}>16</div>
-                  <div className={styles.number2}>19</div>
-                  <div className={styles.number3}>11</div>
-                  <div className={styles.text}>خوانده نشده</div>
-                  <div className={styles.text}>بدون بحث</div>
-                  <div className={styles.text}>حل نشده</div>
+              </NavLink>
+            </div>
+            {co.questions.map((coo) => (
+              <NavLink
+                to={"/course" + co.id.toString() + "/next" + coo.id.toString()}
+                className={styles.nav}
+              >
+                <div className={styles.box}>
+                  <div className={styles.text2}> {coo.name}</div>
+                  <div className={styles.text3}> {coo.date}</div>
+                  <div className={styles.text4}>{coo.text}</div>
                 </div>
-              </div>
+              </NavLink>
             ))}
           </div>
-        </div>
-        <div>
-          <div className={styles.topbox2}>
-            <img
-              src={stariconorange}
-              alt="star icon"
-              className={styles.image}
-            />
-            <div className={styles.text2}> نوشته های مهم</div>
-          </div>
-          <div className={styles.box2}></div>
-        </div>
+        ))}
       </div>
     </div>
   );

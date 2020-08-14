@@ -21,7 +21,7 @@ export const Overview = () => {
           {classes.map((co) => {
             return (
               <div className={styles.text}>
-                <NavLink to={"/course" + co.id.toString()}>
+                <NavLink to={"/course/" + co.id.toString()}>
                   <div className={styles.name}>{co.name}</div>
                   <br />
                   <div className={styles.subject}>{co.professor}</div>

@@ -22,7 +22,7 @@ export const Showcontestassignments = () => {
               to={
                 "/contest" +
                 contest.id.toString() +
-                "/problems/" +
+                "/problems" +
                 co.id.toString()
               }
             >
