@@ -10,10 +10,15 @@ export const Note = () => {
   );
   return (
     <div className={styles.root}>
-      jj
-      {courses.map((co) => (
-        <div>{co.name}</div>
-      ))}
+      <div className={styles.page}>
+        {courses.map((co) => (
+          <div>
+            <div className={styles.subject}>{co.name}</div>
+            <div className={styles.text}>{co.text}</div>
+            <div className={styles.date}>{co.date}</div>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

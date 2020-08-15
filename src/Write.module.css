@@ -1,5 +1,70 @@
 .root {
-  padding: 400px;
   display: inline-block;
+  border: 1px solid #ddd;
+  box-shadow: 0 1px 2px 0 rgba(34, 36, 38, 0.15);
+  border-radius: 0.30769231rem;
   vertical-align: top;
+  margin: 30px;
+  width: 1100px;
+  height: 600px;
+  color: rgb(50, 50, 50);
+  padding: 10px;
+}
+.text1 {
+  font-size: 20px;
+  padding: 10px;
+  line-height: 40px;
+}
+.top {
+  border-bottom: 2px solid #ddd;
+}
+.text2 {
+  display: inline-block;
+  padding: 10px;
+  font-size: 13px;
+  line-height: 40px;
+}
+.text3 {
+  padding: 10px;
+  font-size: 13px;
+  line-height: 40px;
+}
+
+.textbox1 {
+  border: 1px solid #ddd;
+  border-radius: 0.30769231rem;
+  width: 700px;
+  height: 30px;
+  margin: 10px;
+}
+
+.textbox2 {
+  border: 1px solid #ddd;
+  border-radius: 0.30769231rem;
+  width: 700px;
+  height: 200px;
+  margin: 10px;
+}
+
+.button1 {
+  border: 1px solid #ddd;
+  border-radius: 0.30769231rem;
+  width: 70px;
+  height: 30px;
+  display: inline-block;
+  background: #e0e1e2 none;
+  color: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  margin: 10px;
+}
+.button2 {
+  border: 1px solid #ddd;
+  border-radius: 0.30769231rem;
+  width: 70px;
+  height: 30px;
+  display: inline-block;
+  text-align: center;
+  background-color: #25c257;
+  color: #fff;
+  margin: 10px;
 }
