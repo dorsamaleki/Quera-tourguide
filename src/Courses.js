@@ -17,7 +17,7 @@ export const Courses = () => {
         {classes.map((co) => (
           <div>
             <div className={styles.top}>
-              <NavLink to={"/course" + co.id.toString() + "/class"}>
+              <NavLink to={"/course/" + co.id.toString() + "/class"}>
                 <div className={styles.classbutton}>
                   <img
                     src={universityiconblue}
@@ -41,7 +41,7 @@ export const Courses = () => {
             </div>
             {co.questions.map((coo) => (
               <NavLink
-                to={"/course" + co.id.toString() + "/next" + coo.id.toString()}
+                to={"/course/" + co.id.toString() + "/note" + coo.id.toString()}
                 className={styles.nav}
               >
                 <div className={styles.box}>

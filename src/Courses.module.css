@@ -1,12 +1,12 @@
 .root {
   display: inline-block;
-
+  box-sizing: border-box;
   text-decoration: none;
+  width: 300px;
 }
 .sidebar {
   vertical-align: top;
   display: inline-block;
-
   border-left: 1px solid #ddd;
   box-sizing: border-box;
   display: inline-block;

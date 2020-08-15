@@ -34,22 +34,23 @@ const App = () => {
         </Route>
         <Route path="/contest:id/problems">
           <Showcontestassignments />
-        </Route>
-        <Route path="/contest:id/problems:id">
-          <Assignmentcontent />
-        </Route>
-        <Route path="/course/:id">
-          <Courses />
-          <Route path="/course/:id/write">
-            <Write />
+          <Route path="/contest:id/problems:id">
+            <Assignmentcontent />
           </Route>
         </Route>
 
-        <Route path="/course:id/note:id">
-          <Note />
-        </Route>
-        <Route path="/course:id/class">
-          <Classpage />
+        <Route path="/course/:id">
+          <Courses />
+
+          <Route path="/course/:id/class">
+            <Classpage />
+          </Route>
+          <Route path="/course/:id/write">
+            <Write />
+          </Route>
+          <Route path="/course/:id/note:id">
+            <Note />
+          </Route>
         </Route>
       </Switch>
     </Router>

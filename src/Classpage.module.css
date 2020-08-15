@@ -1,16 +1,18 @@
 .root {
   display: inline-block;
-
+  vertical-align: top;
   text-decoration: none;
+  box-sizing: border-box;
+  width: 100%-300px;
 }
 
 .gridContainer {
-  padding-right: 320px;
   display: grid;
   grid-template-columns: auto auto auto;
 }
 .class1 {
-  width: 450px;
+  margin-right: 20px;
+  width: 425px;
   height: 350px;
   display: inline-block;
   box-shadow: 0 1px 2px 0 rgba(34, 36, 38, 0.15);
@@ -117,7 +119,7 @@
   display: inline-block;
 }
 .box2 {
-  width: 300px;
+  width: 350px;
   height: 300px;
   margin-right: 20px;
   border: 1px solid lightgrey;
@@ -131,7 +133,7 @@
   display: inline-block;
 }
 .box3 {
-  width: 400px;
+  width: 350px;
   height: 400px;
   margin-right: 20px;
   border: 1px solid lightgrey;
