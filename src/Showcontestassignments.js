@@ -17,6 +17,7 @@ export const Showcontestassignments = () => {
     <div className={styles.root}>
       <div className={styles.sidebar}>
         <div>
+          <div className={styles.text}>سوالات</div>
           {contest.questions.map((co) => (
             <NavLink
               to={
@@ -25,10 +26,12 @@ export const Showcontestassignments = () => {
                 "/problems" +
                 co.id.toString()
               }
+              className={styles.nav}
             >
               <div className={styles.text}>{co.name}</div>
             </NavLink>
           ))}
+          <div className={styles.text}>جدول امتیازات</div>
         </div>
       </div>
       <div className={styles.main}>

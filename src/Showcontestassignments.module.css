@@ -9,6 +9,17 @@
   border-left: 1px solid #ddd;
   text-decoration: none;
 }
+.nav {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 0.8rem;
+  line-height: 30px;
+  border-bottom: 1px solid lightgrey;
+}
+.text {
+  margin: 20px;
+  color: rgba(0, 0, 0, 0.87);
+}
 
 .main {
   display: inline-block;
@@ -17,9 +28,10 @@
   width: 750px;
   height: 300px;
   margin: 50px 270px 30px 30px;
-  color: rgba(0, 0, 0, 0.87);
+  color: rgba(0, 0, 0, 0.6);
   padding: 20px;
   box-shadow: 0 0 0 0 rgba(34, 36, 38, 0.15) inset;
   border-radius: 0.30769231rem;
   border: 1px solid lightgrey;
+  line-height: 30px;
 }
