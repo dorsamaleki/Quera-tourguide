@@ -34,5 +34,10 @@ export const Getclass = () => [
         date: "6 بهمن",
       },
     ],
+    exercise: [
+      { name: "هفته اول", id: 3000, date: "6 بهمن", number: 3 },
+      { name: "هفته دوم", id: 3001, date: "11 بهمن", number: 2 },
+      { name: "هفته سوم", id: 3002, date: "11 اسفند", number: 5 },
+    ],
   },
 ];

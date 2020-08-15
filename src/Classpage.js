@@ -73,7 +73,21 @@ export const Classpage = () => {
             />
             <div className={styles.text3}> تمرین ها</div>
           </div>
-          <div className={styles.box3}></div>
+          <div className={styles.box3}>
+            {classes.map((co) => (
+              <div>
+                {co.exercise.map((coo) => (
+                  <div className={styles.exercise}>
+                    <div className={styles.text4}>{coo.name}</div>
+                    <div className={styles.text5}>
+                      <div>{coo.number} سوال</div>
+                      <div> {coo.date}</div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>
