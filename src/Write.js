@@ -7,7 +7,7 @@ export const Write = () => {
     setSelected(event.target.value);
   };
   return (
-    <div className={styles.root}>
+    <div className={styles.root} id="tour8">
       <div className={styles.text1}>نوشته جدید</div>
       <div className={styles.top}>
         <div className={styles.text2}>یادداشت</div>

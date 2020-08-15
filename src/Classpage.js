@@ -7,7 +7,7 @@ import { Getclass } from "./Getclass";
 export const Classpage = () => {
   const classes = Getclass();
   return (
-    <div className={styles.root}>
+    <div className={styles.root} id="tour6">
       <div className={styles.gridContainer}>
         <div>
           <div className={styles.top}>

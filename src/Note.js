@@ -9,7 +9,7 @@ export const Note = () => {
     courses.questions.find((courses) => courses.id.toString() === id)
   );
   return (
-    <div className={styles.root}>
+    <div className={styles.root} id="tour10">
       <div className={styles.page}>
         {courses.map((co) => (
           <div>

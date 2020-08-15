@@ -6,7 +6,7 @@ import codeicon from "./codeicon.png";
 import coffeeicon from "./coffeeicon.png";
 import briefcaseicon from "./briefcaseicon.png";
 import graduationcapicon from "./graduationcapicon.png";
-export const Navbar = () => {
+export const Navbar = (props) => {
   return (
     <div className={styles.root}>
       <NavLink to="/dashboard">
@@ -14,23 +14,24 @@ export const Navbar = () => {
           src="https://cdn.quera.ir/images/logo/logo-q.0-3aee17faf53e.svg"
           alt="quera logo"
           className={styles.queralogo}
+          id="tour1"
         />
       </NavLink>
       <NavLink to="/overview">
-        <div className={styles.overview}>
+        <div className={styles.overview} id="tour3">
           <img src={universityicon} alt="university icon" />
           کلاس ها
         </div>
       </NavLink>
       <NavLink to="/problemset">
-        <div className={styles.problems}>
+        <div className={styles.problems} id="tour11">
           <img src={codeicon} alt="code icon" />
           سوالات
         </div>
       </NavLink>
       <NavLink to="/contest">
         <div className={styles.contest}>
-          <img src={coffeeicon} alt="coffee icon" />
+          <img src={coffeeicon} alt="coffee icon" id="tour13" />
           مسابقات
         </div>
       </NavLink>
@@ -55,6 +56,9 @@ export const Navbar = () => {
           Career Days
         </div>
       </NavLink>
+      <div onClick={props.onIconPress} className={styles.help}>
+        HELP
+      </div>
     </div>
   );
 };

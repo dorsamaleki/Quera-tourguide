@@ -18,7 +18,7 @@ export const Courses = () => {
           <div>
             <div className={styles.top}>
               <NavLink to={"/course/" + co.id.toString() + "/class"}>
-                <div className={styles.classbutton}>
+                <div className={styles.classbutton} id="tour5">
                   <img
                     src={universityiconblue}
                     alt="university icon"
@@ -29,7 +29,7 @@ export const Courses = () => {
               </NavLink>
 
               <NavLink to={"/course/" + co.id.toString() + "/write"}>
-                <div className={styles.writebutton}>
+                <div className={styles.writebutton} id="tour7">
                   <img
                     src={pencilicon}
                     alt="pencil icon"
@@ -39,18 +39,22 @@ export const Courses = () => {
                 </div>
               </NavLink>
             </div>
-            {co.questions.map((coo) => (
-              <NavLink
-                to={"/course/" + co.id.toString() + "/note" + coo.id.toString()}
-                className={styles.nav}
-              >
-                <div className={styles.box}>
-                  <div className={styles.text2}> {coo.name}</div>
-                  <div className={styles.text3}> {coo.date}</div>
-                  <div className={styles.text4}>{coo.text}</div>
-                </div>
-              </NavLink>
-            ))}
+            <div id="tour9">
+              {co.questions.map((coo) => (
+                <NavLink
+                  to={
+                    "/course/" + co.id.toString() + "/note" + coo.id.toString()
+                  }
+                  className={styles.nav}
+                >
+                  <div className={styles.box}>
+                    <div className={styles.text2}> {coo.name}</div>
+                    <div className={styles.text3}> {coo.date}</div>
+                    <div className={styles.text4}>{coo.text}</div>
+                  </div>
+                </NavLink>
+              ))}
+            </div>
           </div>
         ))}
       </div>

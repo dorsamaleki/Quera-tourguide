@@ -1,6 +1,8 @@
 .root {
   display: inline-block;
   padding-right: 200px;
+  line-height: 30px;
+  width: 100%;
 }
 .image {
   width: 22.1px;
@@ -95,6 +97,7 @@
 
 .text1 {
   color: #4183c4;
+  text-align: center;
 }
 .text2 {
   color: rgba(0, 0, 0, 0.6);
@@ -104,10 +107,13 @@
 }
 .text3 {
   color: #f2711c;
+  text-align: center;
 }
 .text4 {
   color: #dc4040;
+  text-align: center;
 }
 .text5 {
   color: #25c257;
+  text-align: center;
 }

@@ -16,7 +16,7 @@ export const Overview = () => {
           <option value="b">کلاس های فعال من</option>
         </select>
         <div className={styles.line1}></div>
-        <div className={styles.class1}>
+        <div className={styles.class1} id="tour4">
           <img src={class1} alt="class1" />
           {classes.map((co) => {
             return (

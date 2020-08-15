@@ -10,7 +10,7 @@ export const Home = () => {
   const classes = Getclass();
 
   return (
-    <div className={styles.root}>
+    <div className={styles.root} id="tour2">
       <div className={styles.boxcontainer}>
         <div className={styles.box1}>
           <div className={styles.boxtop}>
@@ -37,7 +37,7 @@ export const Home = () => {
                 </div>
                 <div>
                   <div className={styles.text2}>آخرین تمرین:</div>
-                  <div className={styles.text}>آزمون</div>
+                  <div className={styles.text}>هفته پنجم</div>
                 </div>
                 <div className={styles.text2}>
                   <div>{co.members} عضو </div>
@@ -75,7 +75,6 @@ export const Home = () => {
               <div className={styles.text1}>دانشگاهی</div>
               <div className={styles.text1}>المپیاد</div>
             </div>
-            <div className={styles.text2}>سؤالات پیشنهادی</div>
           </div>
         </div>
         <div className={styles.box3}>

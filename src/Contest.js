@@ -13,7 +13,7 @@ export const Contest = () => {
   const participants = Getparticipants();
   return (
     <div>
-      <div className={styles.root}>
+      <div className={styles.root} id="tour14">
         <div className={styles.menu1}>
           <img src={coffeicon} alt="coffee icon" />
           مسابقات

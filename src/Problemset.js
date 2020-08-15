@@ -6,7 +6,7 @@ export const Problemset = () => {
   const contests = Getcontest();
   let selected = false;
   return (
-    <div className={styles.root}>
+    <div className={styles.root} id="tour12">
       <div className={styles.right}>
         <div className={styles.subject}>دسته ها</div>
         <div className={styles.gridContainer}>
