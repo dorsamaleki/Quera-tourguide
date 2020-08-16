@@ -67,6 +67,7 @@ const App = () => {
         steps={steps}
         isOpen={showTour}
         onRequestClose={() => setShowTour(false)}
+        disableKeyboardNavigation={["esc"]}
       />
     </div>
   );
