@@ -12,11 +12,11 @@ export const Note = () => {
   return (
     <div className={styles.root} id="tour10">
       <div className={styles.page}>
-        {courses.map((co) => (
+        {courses.map((course) => (
           <div>
-            <div className={styles.subject}>{co.name}</div>
-            <div className={styles.text}>{co.text}</div>
-            <div className={styles.date}>{co.date}</div>
+            <div className={styles.subject}>{course.name}</div>
+            <div className={styles.text}>{course.text}</div>
+            <div className={styles.date}>{course.date}</div>
           </div>
         ))}
       </div>

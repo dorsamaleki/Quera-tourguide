@@ -22,20 +22,26 @@ export const Overview = (props) => {
           onClick={props.onOverviewClick}
         >
           <img src={class1} alt="class1" />
-          {classes.map((co) => {
+          {classes.map((classescontent) => {
             return (
               <div className={styles.text}>
-                <NavLink to={"/course/" + co.id.toString()}>
-                  <div className={styles.name}>{co.name}</div>
+                <NavLink to={"/course/" + classescontent.id.toString()}>
+                  <div className={styles.name}>{classescontent.name}</div>
                   <br />
-                  <div className={styles.subject}>{co.professor}</div>
+                  <div className={styles.subject}>
+                    {classescontent.professor}
+                  </div>
                   <br />
-                  <div className={styles.subject}>{co.university}</div>
+                  <div className={styles.subject}>
+                    {classescontent.university}
+                  </div>
                 </NavLink>
                 <div className={styles.line2}></div>
                 <div className={styles.gridcontainer}>
-                  <div className={styles.members}>{co.members}عضو</div>
-                  <div className={styles.date}>{co.date}</div>
+                  <div className={styles.members}>
+                    {classescontent.members}عضو
+                  </div>
+                  <div className={styles.date}>{classescontent.date}</div>
                 </div>
               </div>
             );

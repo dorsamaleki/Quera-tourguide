@@ -178,7 +178,19 @@ export const TourSteps = () => [
   {
     selector: "#tour15 ",
     content:
-      "در این صفحه جزییات مسابقه ای که انتخاب کرده اید را مشاهده می کنید. با کورا تجربه خوبی داشته باشید!",
+      "در این صفحه جزییات مسابقه ای که انتخاب کرده اید را مشاهده می کنید.",
+    style: {
+      fontSize: "0.8rem",
+      color: "rgba(0, 0, 0, 0.6)",
+      border: " 1px solid lightgrey",
+      boxShadow: "0 1px 2px 0 rgba(34, 36, 38, 0.15)",
+      lineHeight: "20px",
+      borderRadius: "0.30769231rem",
+    },
+  },
+  {
+    selector: "#tour16 ",
+    content: " با کورا تجربه خوبی داشته باشید!",
     style: {
       fontSize: "0.8rem",
       color: "rgba(0, 0, 0, 0.6)",

@@ -14,10 +14,12 @@ export const Courses = (props) => {
       {console.log("o")}
       {console.log({ courses })}
       <div className={styles.sidebar}>
-        {classes.map((co) => (
+        {classes.map((classescontent) => (
           <div>
             <div className={styles.top}>
-              <NavLink to={"/course/" + co.id.toString() + "/class"}>
+              <NavLink
+                to={"/course/" + classescontent.id.toString() + "/class"}
+              >
                 <div
                   className={styles.classbutton}
                   id="tour5"
@@ -32,7 +34,9 @@ export const Courses = (props) => {
                 </div>
               </NavLink>
 
-              <NavLink to={"/course/" + co.id.toString() + "/write"}>
+              <NavLink
+                to={"/course/" + classescontent.id.toString() + "/write"}
+              >
                 <div
                   className={styles.writebutton}
                   id="tour7"
@@ -48,17 +52,20 @@ export const Courses = (props) => {
               </NavLink>
             </div>
             <div id="tour9" onClick={props.onNoteClick}>
-              {co.questions.map((coo) => (
+              {classescontent.questions.map((classesquestion) => (
                 <NavLink
                   to={
-                    "/course/" + co.id.toString() + "/note" + coo.id.toString()
+                    "/course/" +
+                    classescontent.id.toString() +
+                    "/note" +
+                    classesquestion.id.toString()
                   }
                   className={styles.nav}
                 >
                   <div className={styles.box}>
-                    <div className={styles.text2}> {coo.name}</div>
-                    <div className={styles.text3}> {coo.date}</div>
-                    <div className={styles.text4}>{coo.text}</div>
+                    <div className={styles.text2}> {classesquestion.name}</div>
+                    <div className={styles.text3}> {classesquestion.date}</div>
+                    <div className={styles.text4}>{classesquestion.text}</div>
                   </div>
                 </NavLink>
               ))}

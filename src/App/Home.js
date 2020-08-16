@@ -28,19 +28,19 @@ export const Home = () => {
             </div>
           </div>
           <div className={styles.box1bottom}>
-            {classes.map((co) => (
+            {classes.map((classescontent) => (
               <div className={styles.gridcontainerbox1}>
                 <div>
-                  <div className={styles.text1}>کلاس {co.name}</div>
-                  <div className={styles.text2}>{co.professor}</div>
+                  <div className={styles.text1}>کلاس {classescontent.name}</div>
+                  <div className={styles.text2}>{classescontent.professor}</div>
                 </div>
                 <div>
                   <div className={styles.text2}>آخرین تمرین:</div>
                   <div className={styles.text}>هفته پنجم</div>
                 </div>
                 <div className={styles.text2}>
-                  <div>{co.members} عضو </div>
-                  <div>{co.date}</div>
+                  <div>{classescontent.members} عضو </div>
+                  <div>{classescontent.date}</div>
                 </div>
               </div>
             ))}

@@ -45,13 +45,13 @@ export const Problemset = () => {
           {contests.map((contest) => {
             return (
               <div>
-                {contest.questions.map((co) => (
+                {contest.questions.map((contestquestion) => (
                   <div className={styles.gridcontainer2}>
-                    <div> {co.id}</div>
-                    <div className={styles.name}> {co.name}</div>
-                    <div> {co.tag}</div>
+                    <div> {contestquestion.id}</div>
+                    <div className={styles.name}> {contestquestion.name}</div>
+                    <div> {contestquestion.tag}</div>
                     <div className={styles.name}> {contest.name}</div>
-                    <div> {co.number}</div>
+                    <div> {contestquestion.number}</div>
                   </div>
                 ))}
               </div>

@@ -20,19 +20,19 @@ export const Classpage = () => {
             <div className={styles.text1}>کلاس در یک نگاه</div>
           </div>
           <div className={styles.class1}>
-            {classes.map((co) => (
+            {classes.map((classescontent) => (
               <div>
-                <div className={styles.name}>{co.name}</div>
-                <div className={styles.subject}>{co.professor}</div>
+                <div className={styles.name}>{classescontent.name}</div>
+                <div className={styles.subject}>{classescontent.professor}</div>
                 <br />
                 <div className={styles.line1}>
                   <span>دستیاران آموزشی</span>
                 </div>
-                <div className={styles.subject}>{co.TA}</div>
+                <div className={styles.subject}>{classescontent.TA}</div>
 
                 <div className={styles.line2}></div>
                 <div className={styles.gridContainer1}>
-                  <div className={styles.member1}>{co.members}</div>
+                  <div className={styles.member1}>{classescontent.members}</div>
                   <div className={styles.member2}>4</div>
                   <div>تعداد اعضا</div>
                   <div>تعداد نوشته ها</div>
@@ -75,14 +75,14 @@ export const Classpage = () => {
             <div className={styles.text3}> تمرین ها</div>
           </div>
           <div className={styles.box3}>
-            {classes.map((co) => (
+            {classes.map((classescontent) => (
               <div>
-                {co.exercise.map((coo) => (
+                {classescontent.exercise.map((classesquestion) => (
                   <div className={styles.exercise}>
-                    <div className={styles.text4}>{coo.name}</div>
+                    <div className={styles.text4}>{classesquestion.name}</div>
                     <div className={styles.text5}>
-                      <div>{coo.number} سوال</div>
-                      <div> {coo.date}</div>
+                      <div>{classesquestion.number} سوال</div>
+                      <div> {classesquestion.date}</div>
                     </div>
                   </div>
                 ))}
