@@ -1,4 +1,4 @@
-export const Getclass = () => [
+export const getClass = () => [
   {
     id: 1000,
     name: "آزمایشگاه پایگاه داده ها",

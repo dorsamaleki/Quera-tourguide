@@ -1,19 +1,20 @@
 import React, { useState } from "react";
 import Tour from "reactour";
-import { Navbar } from "./Navbar";
 import "./App.css";
+import { Navbar } from "./App/Navbar";
+
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { Home } from "./Home";
-import { Problemset } from "./Problemset";
-import { Contest } from "./Contest";
-import { Showcontestassignments } from "./Showcontestassignments.js";
-import { Assignmentcontent } from "./Assignmentcontent";
-import { Overview } from "./Overview.js";
-import { Courses } from "./Courses";
-import { Write } from "./Write";
-import { Classpage } from "./Classpage";
-import { Note } from "./Note";
-import { TourSteps } from "./TourSteps";
+import { Home } from "./App/Home";
+import { Problemset } from "./App/Problemset";
+import { Contest } from "./App/Contest";
+import { Showcontestassignments } from "./App/Showcontestassignments.js";
+import { Assignmentcontent } from "./App/Assignmentcontent";
+import { Overview } from "./App/Overview.js";
+import { Courses } from "./App/Courses";
+import { Write } from "./App/Write";
+import { Classpage } from "./App/Classpage";
+import { Note } from "./App/Note";
+import { TourSteps } from "./config/TourSteps";
 
 const App = () => {
   const [tourStep, setTourStep] = useState(0);

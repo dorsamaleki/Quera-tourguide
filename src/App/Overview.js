@@ -1,10 +1,10 @@
 import React from "react";
 import styles from "./Overview.module.css";
-import class1 from "./class1.jpg";
-import { Getclass } from "./Getclass";
+import class1 from "../icon/class1.jpg";
+import { getClass } from "../api/getClass";
 import { NavLink, useParams } from "react-router-dom";
 export const Overview = (props) => {
-  const classes = Getclass();
+  const classes = getClass();
   let { id } = useParams();
   const courses = classes.find((courses) => courses.id.toString() === id);
 

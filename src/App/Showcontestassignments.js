@@ -2,10 +2,10 @@ import React from "react";
 import styles from "./Showcontestassignments.module.css";
 
 import { useParams, NavLink } from "react-router-dom";
-import { Getcontest } from "./Getcontest";
+import { getContest } from "../api/getContest";
 
 export const Showcontestassignments = () => {
-  const contests = Getcontest();
+  const contests = getContest();
   let { id } = useParams();
   const contest = contests.find((contest) => contest.id.toString() === id);
 

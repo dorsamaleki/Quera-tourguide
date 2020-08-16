@@ -1,13 +1,13 @@
 import React from "react";
 import styles from "./Home.module.css";
-import universityiconcolored from "./universityiconcolored.png";
+import universityiconcolored from "../icon/universityiconcolored.png";
 import { NavLink } from "react-router-dom";
-import codeiconcolored from "./codeiconcolored.png";
-import coffeeiconcolored from "./coffeeiconcolored.png";
-import { Getclass } from "./Getclass";
+import codeiconcolored from "../icon/codeiconcolored.png";
+import coffeeiconcolored from "../icon/coffeeiconcolored.png";
+import { getClass } from "../api/getClass";
 
 export const Home = () => {
-  const classes = Getclass();
+  const classes = getClass();
 
   return (
     <div className={styles.root} id="tour2">

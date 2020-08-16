@@ -1,9 +1,9 @@
 import React from "react";
 import styles from "./Note.module.css";
-import { Getclass } from "./Getclass";
+import { getClass } from "../api/getClass";
 import { useParams } from "react-router-dom";
 export const Note = () => {
-  const classes = Getclass();
+  const classes = getClass();
   let { id } = useParams();
   const courses = classes.map((courses) =>
     courses.questions.find((courses) => courses.id.toString() === id)

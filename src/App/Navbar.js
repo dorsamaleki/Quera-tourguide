@@ -1,11 +1,11 @@
 import React from "react";
 import styles from "./Navbar.module.css";
 import { NavLink } from "react-router-dom";
-import universityicon from "./universityicon.png";
-import codeicon from "./codeicon.png";
-import coffeeicon from "./coffeeicon.png";
-import briefcaseicon from "./briefcaseicon.png";
-import graduationcapicon from "./graduationcapicon.png";
+import universityicon from "../icon/universityicon.png";
+import codeicon from "../icon/codeicon.png";
+import coffeeicon from "../icon/coffeeicon.png";
+import briefcaseicon from "../icon/briefcaseicon.png";
+import graduationcapicon from "../icon/graduationcapicon.png";
 export const Navbar = (props) => {
   return (
     <div className={styles.root}>

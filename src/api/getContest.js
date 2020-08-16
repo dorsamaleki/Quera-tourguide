@@ -1,4 +1,4 @@
-export const Getcontest = () => [
+export const getContest = () => [
   {
     id: 100,
     name: " مهارت‌سنجی Career Days",

@@ -1,12 +1,12 @@
 import React from "react";
 import { useParams, NavLink } from "react-router-dom";
-import { Getclass } from "./Getclass";
+import { getClass } from "../api/getClass";
 import styles from "./Courses.module.css";
 
-import universityiconblue from "./universityiconblue.png";
-import pencilicon from "./pencilicon.png";
+import universityiconblue from "../icon/universityiconblue.png";
+import pencilicon from "../icon/pencilicon.png";
 export const Courses = (props) => {
-  const classes = Getclass();
+  const classes = getClass();
   let { id } = useParams();
   const courses = classes.find((courses) => courses.id.toString() === id);
   return (

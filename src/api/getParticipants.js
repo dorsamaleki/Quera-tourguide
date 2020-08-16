@@ -1,4 +1,4 @@
-export const Getparticipants = () => [
+export const getPrticipants = () => [
   { name: "Mike", rank: 1, grade: 2402 },
   { name: "شایان چشم جهان", rank: 2, grade: 2352 },
   { name: "شایان پردیس", rank: 3, grade: 2288 },

@@ -1,9 +1,9 @@
 import React from "react";
 import styles from "./Problemset.module.css";
 import { NavLink } from "react-router-dom";
-import { Getcontest } from "./Getcontest";
+import { getContest } from "../api/getContest";
 export const Problemset = () => {
-  const contests = Getcontest();
+  const contests = getContest();
   let selected = false;
   return (
     <div className={styles.root} id="tour12">

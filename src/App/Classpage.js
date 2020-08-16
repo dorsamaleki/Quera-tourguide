@@ -1,11 +1,11 @@
 import React from "react";
-import universityiconcolored from "./universityiconcolored.png";
-import stariconorange from "./stariconorange.png";
-import codeiconcolored from "./codeiconcolored.png";
+import universityiconcolored from "../icon/universityiconcolored.png";
+import stariconorange from "../icon/stariconorange.png";
+import codeiconcolored from "../icon/codeiconcolored.png";
 import styles from "./Classpage.module.css";
-import { Getclass } from "./Getclass";
+import { getClass } from "../api/getClass";
 export const Classpage = () => {
-  const classes = Getclass();
+  const classes = getClass();
   return (
     <div className={styles.root} id="tour6">
       <div className={styles.gridContainer}>

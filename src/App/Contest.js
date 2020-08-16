@@ -1,16 +1,15 @@
 import React from "react";
 import styles from "./Contest.module.css";
-import coffeicon from "./coffeeicon.png";
+import coffeicon from "../icon/coffeeicon.png";
 import { NavLink } from "react-router-dom";
-import { Getcontest } from "./Getcontest";
+import { getContest } from "../api/getContest";
 import { Showcontest } from "./Showcontest";
-
-import staricon from "./staricon.png";
-import { Getparticipants } from "./Getparticipants";
+import staricon from "../icon/staricon.png";
+import { getPrticipants } from "../api/getParticipants";
 import { Showparticipants } from "./Showparticipants";
 export const Contest = (props) => {
-  const contests = Getcontest();
-  const participants = Getparticipants();
+  const contests = getContest();
+  const participants = getPrticipants();
   return (
     <div>
       <div className={styles.root} id="tour14">
