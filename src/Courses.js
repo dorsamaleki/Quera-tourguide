@@ -5,7 +5,7 @@ import styles from "./Courses.module.css";
 
 import universityiconblue from "./universityiconblue.png";
 import pencilicon from "./pencilicon.png";
-export const Courses = () => {
+export const Courses = (props) => {
   const classes = Getclass();
   let { id } = useParams();
   const courses = classes.find((courses) => courses.id.toString() === id);
@@ -18,7 +18,11 @@ export const Courses = () => {
           <div>
             <div className={styles.top}>
               <NavLink to={"/course/" + co.id.toString() + "/class"}>
-                <div className={styles.classbutton} id="tour5">
+                <div
+                  className={styles.classbutton}
+                  id="tour5"
+                  onClick={props.onCourseClick}
+                >
                   <img
                     src={universityiconblue}
                     alt="university icon"
@@ -29,7 +33,11 @@ export const Courses = () => {
               </NavLink>
 
               <NavLink to={"/course/" + co.id.toString() + "/write"}>
-                <div className={styles.writebutton} id="tour7">
+                <div
+                  className={styles.writebutton}
+                  id="tour7"
+                  onClick={props.onWriteClick}
+                >
                   <img
                     src={pencilicon}
                     alt="pencil icon"
@@ -39,7 +47,7 @@ export const Courses = () => {
                 </div>
               </NavLink>
             </div>
-            <div id="tour9">
+            <div id="tour9" onClick={props.onNoteClick}>
               {co.questions.map((coo) => (
                 <NavLink
                   to={

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styles from "./Write.module.css";
-export const Write = () => {
+
+export const Write = (props) => {
   const [selected, setSelected] = useState("option1");
 
   const onValueChange = (event) => {

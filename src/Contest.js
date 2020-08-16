@@ -8,7 +8,7 @@ import { Showcontest } from "./Showcontest";
 import staricon from "./staricon.png";
 import { Getparticipants } from "./Getparticipants";
 import { Showparticipants } from "./Showparticipants";
-export const Contest = () => {
+export const Contest = (props) => {
   const contests = Getcontest();
   const participants = Getparticipants();
   return (
@@ -53,7 +53,11 @@ export const Contest = () => {
           {contests.map((contest) => {
             return (
               <div>
-                <Showcontest key={contest.id} {...contest} />
+                <Showcontest
+                  key={contest.id}
+                  {...contest}
+                  onShowcontestClick={props.onShowcontestClick}
+                />
               </div>
             );
           })}

@@ -3,7 +3,7 @@ import styles from "./Overview.module.css";
 import class1 from "./class1.jpg";
 import { Getclass } from "./Getclass";
 import { NavLink, useParams } from "react-router-dom";
-export const Overview = () => {
+export const Overview = (props) => {
   const classes = Getclass();
   let { id } = useParams();
   const courses = classes.find((courses) => courses.id.toString() === id);
@@ -16,7 +16,11 @@ export const Overview = () => {
           <option value="b">کلاس های فعال من</option>
         </select>
         <div className={styles.line1}></div>
-        <div className={styles.class1} id="tour4">
+        <div
+          className={styles.class1}
+          id="tour4"
+          onClick={props.onOverviewClick}
+        >
           <img src={class1} alt="class1" />
           {classes.map((co) => {
             return (

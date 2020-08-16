@@ -15,23 +15,36 @@ export const Navbar = (props) => {
           alt="quera logo"
           className={styles.queralogo}
           id="tour1"
+          onClick={props.onLogoClick}
         />
       </NavLink>
       <NavLink to="/overview">
-        <div className={styles.overview} id="tour3">
+        <div
+          className={styles.overview}
+          id="tour3"
+          onClick={props.onClassClick}
+        >
           <img src={universityicon} alt="university icon" />
           کلاس ها
         </div>
       </NavLink>
       <NavLink to="/problemset">
-        <div className={styles.problems} id="tour11">
+        <div
+          className={styles.problems}
+          id="tour11"
+          onClick={props.onProblemSetClick}
+        >
           <img src={codeicon} alt="code icon" />
           سوالات
         </div>
       </NavLink>
       <NavLink to="/contest">
-        <div className={styles.contest}>
-          <img src={coffeeicon} alt="coffee icon" id="tour13" />
+        <div
+          className={styles.contest}
+          id="tour13"
+          onClick={props.onContestClick}
+        >
+          <img src={coffeeicon} alt="coffee icon" />
           مسابقات
         </div>
       </NavLink>

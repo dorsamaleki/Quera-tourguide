@@ -16,9 +16,10 @@ import { Note } from "./Note";
 import { TourSteps } from "./TourSteps";
 
 const App = () => {
+  const [tourStep, setTourStep] = useState(0);
   const steps = TourSteps();
   const [showTour, setShowTour] = useState(false);
-
+  const [updateTour, setUpdateTour] = useState("");
   return (
     <div>
       <Router>
@@ -26,20 +27,46 @@ const App = () => {
           onIconPress={() => {
             setShowTour(true);
           }}
+          onLogoClick={() => {
+            setTourStep(1);
+            setUpdateTour(Date.now() + "");
+          }}
+          onClassClick={() => {
+            setTourStep(3);
+            setUpdateTour(Date.now() + "");
+          }}
+          onProblemSetClick={() => {
+            setTourStep(11);
+            setUpdateTour(Date.now() + "");
+          }}
+          onContestClick={() => {
+            setTourStep(13);
+            setUpdateTour(Date.now() + "");
+          }}
         />
         <Switch>
           <Route path="/dashboard">
             <Home />
           </Route>
           <Route path="/overview">
-            <Overview />
+            <Overview
+              onOverviewClick={() => {
+                setTourStep(4);
+                setUpdateTour(Date.now() + "");
+              }}
+            />
           </Route>
 
           <Route path="/problemset">
             <Problemset />
           </Route>
           <Route path="/contest">
-            <Contest />
+            <Contest
+              onShowcontestClick={() => {
+                setTourStep(14);
+                setUpdateTour(Date.now() + "");
+              }}
+            />
           </Route>
           <Route path="/contest:id/problems">
             <Showcontestassignments />
@@ -49,7 +76,20 @@ const App = () => {
           </Route>
 
           <Route path="/course/:id">
-            <Courses />
+            <Courses
+              onCourseClick={() => {
+                setTourStep(5);
+                setUpdateTour(Date.now() + "");
+              }}
+              onWriteClick={() => {
+                setTourStep(7);
+                setUpdateTour(Date.now() + "");
+              }}
+              onNoteClick={() => {
+                setTourStep(9);
+                setUpdateTour(Date.now() + "");
+              }}
+            />
 
             <Route path="/course/:id/class">
               <Classpage />
@@ -68,6 +108,8 @@ const App = () => {
         isOpen={showTour}
         onRequestClose={() => setShowTour(false)}
         disableKeyboardNavigation={["esc"]}
+        goToStep={tourStep}
+        update={updateTour}
       />
     </div>
   );
