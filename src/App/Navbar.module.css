@@ -9,17 +9,14 @@
   font-size: 13px;
   font-family: Tahoma, Helvetica, sans-serif;
 }
-
 .queralogo {
   display: inline-block;
-
   height: 3em;
   width: auto;
   opacity: 0.95;
   margin: 0.4em;
   cursor: pointer;
 }
-
 div img {
   width: 1.18em;
   height: 1em;

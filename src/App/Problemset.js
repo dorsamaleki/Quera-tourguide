@@ -1,7 +1,8 @@
 import React from "react";
-import styles from "./Problemset.module.css";
 import { NavLink } from "react-router-dom";
+import styles from "./Problemset.module.css";
 import { getContest } from "../api/getContest";
+
 export const Problemset = () => {
   const contests = getContest();
   let selected = false;

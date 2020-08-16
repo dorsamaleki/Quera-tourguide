@@ -3,7 +3,6 @@ import styles from "./Write.module.css";
 
 export const Write = (props) => {
   const [selected, setSelected] = useState("option1");
-
   const onValueChange = (event) => {
     setSelected(event.target.value);
   };

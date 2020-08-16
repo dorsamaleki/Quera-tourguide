@@ -1,10 +1,10 @@
 import React from "react";
 import { useParams, NavLink } from "react-router-dom";
-import { getClass } from "../api/getClass";
 import styles from "./Courses.module.css";
-
+import { getClass } from "../api/getClass";
 import universityiconblue from "../icon/universityiconblue.png";
 import pencilicon from "../icon/pencilicon.png";
+
 export const Courses = (props) => {
   const classes = getClass();
   let { id } = useParams();

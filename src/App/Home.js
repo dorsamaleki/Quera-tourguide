@@ -1,14 +1,13 @@
 import React from "react";
-import styles from "./Home.module.css";
-import universityiconcolored from "../icon/universityiconcolored.png";
 import { NavLink } from "react-router-dom";
+import styles from "./Home.module.css";
+import { getClass } from "../api/getClass";
+import universityiconcolored from "../icon/universityiconcolored.png";
 import codeiconcolored from "../icon/codeiconcolored.png";
 import coffeeiconcolored from "../icon/coffeeiconcolored.png";
-import { getClass } from "../api/getClass";
 
 export const Home = () => {
   const classes = getClass();
-
   return (
     <div className={styles.root} id="tour2">
       <div className={styles.boxcontainer}>

@@ -2,7 +2,6 @@
   display: grid;
   grid-template-columns: 300px 200px 120px auto auto;
 }
-
 .button {
   text-decoration: none;
   display: inline-block;

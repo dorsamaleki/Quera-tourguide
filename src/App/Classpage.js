@@ -1,9 +1,10 @@
 import React from "react";
+import styles from "./Classpage.module.css";
+import { getClass } from "../api/getClass";
 import universityiconcolored from "../icon/universityiconcolored.png";
 import stariconorange from "../icon/stariconorange.png";
 import codeiconcolored from "../icon/codeiconcolored.png";
-import styles from "./Classpage.module.css";
-import { getClass } from "../api/getClass";
+
 export const Classpage = () => {
   const classes = getClass();
   return (

@@ -1,20 +1,18 @@
 import React, { useState } from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Tour from "reactour";
 import "./App.css";
+import { TourSteps } from "./config/TourSteps";
 import { Navbar } from "./App/Navbar";
-
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Home } from "./App/Home";
 import { Problemset } from "./App/Problemset";
 import { Contest } from "./App/Contest";
 import { Showcontestassignments } from "./App/Showcontestassignments.js";
-import { Assignmentcontent } from "./App/Assignmentcontent";
 import { Overview } from "./App/Overview.js";
 import { Courses } from "./App/Courses";
 import { Write } from "./App/Write";
 import { Classpage } from "./App/Classpage";
 import { Note } from "./App/Note";
-import { TourSteps } from "./config/TourSteps";
 
 const App = () => {
   const [tourStep, setTourStep] = useState(0);
@@ -57,7 +55,6 @@ const App = () => {
               }}
             />
           </Route>
-
           <Route path="/problemset">
             <Problemset />
           </Route>
@@ -71,11 +68,7 @@ const App = () => {
           </Route>
           <Route path="/contest:id/problems">
             <Showcontestassignments />
-            <Route path="/contest:id/problems:id">
-              <Assignmentcontent />
-            </Route>
           </Route>
-
           <Route path="/course/:id">
             <Courses
               onCourseClick={() => {
@@ -91,7 +84,6 @@ const App = () => {
                 setUpdateTour(Date.now() + "");
               }}
             />
-
             <Route path="/course/:id/class">
               <Classpage />
             </Route>

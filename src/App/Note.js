@@ -1,7 +1,8 @@
 import React from "react";
+import { useParams } from "react-router-dom";
 import styles from "./Note.module.css";
 import { getClass } from "../api/getClass";
-import { useParams } from "react-router-dom";
+
 export const Note = () => {
   const classes = getClass();
   let { id } = useParams();

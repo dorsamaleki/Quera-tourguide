@@ -1,18 +1,15 @@
 import React from "react";
-import styles from "./Showcontestassignments.module.css";
-
 import { useParams, NavLink } from "react-router-dom";
+import styles from "./Showcontestassignments.module.css";
 import { getContest } from "../api/getContest";
 
 export const Showcontestassignments = () => {
   const contests = getContest();
   let { id } = useParams();
   const contest = contests.find((contest) => contest.id.toString() === id);
-
   if (!contest) {
     return <div>Question not found</div>;
   }
-
   return (
     <div className={styles.root} id="tour15">
       <div className={styles.sidebar}>

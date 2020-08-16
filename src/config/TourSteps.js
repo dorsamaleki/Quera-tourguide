@@ -3,10 +3,6 @@ export const TourSteps = () => [
     selector: "#tour1",
     content:
       "به کورا خوش اومدید! من شما را برای استفاده از کورا راهنمایی می کنم. برای مشاهده صفحه اصلی روی لگوی کورا کلیک کنید.",
-    action: (node) => {
-      node.focus();
-      console.log("yup, the target element is also focused!");
-    },
     style: {
       fontSize: "0.8rem",
       color: "rgba(0, 0, 0, 0.6)",

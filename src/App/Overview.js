@@ -1,13 +1,13 @@
 import React from "react";
-import styles from "./Overview.module.css";
-import class1 from "../icon/class1.jpg";
-import { getClass } from "../api/getClass";
 import { NavLink, useParams } from "react-router-dom";
+import styles from "./Overview.module.css";
+import { getClass } from "../api/getClass";
+import class1 from "../icon/class1.jpg";
+
 export const Overview = (props) => {
   const classes = getClass();
   let { id } = useParams();
   const courses = classes.find((courses) => courses.id.toString() === id);
-
   return (
     <div className={styles.root}>
       <div>
