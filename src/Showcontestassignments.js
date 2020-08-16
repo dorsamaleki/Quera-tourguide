@@ -14,7 +14,7 @@ export const Showcontestassignments = () => {
   }
 
   return (
-    <div className={styles.root} id="tour16">
+    <div className={styles.root} id="tour15">
       <div className={styles.sidebar}>
         <div>
           <div className={styles.text}>سوالات</div>

@@ -57,7 +57,7 @@ export const Navbar = (props) => {
         </div>
       </NavLink>
       <div onClick={props.onIconPress} className={styles.help}>
-        HELP
+        ?
       </div>
     </div>
   );
