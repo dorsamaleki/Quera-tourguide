@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/Quera-tourguide/static/css/main.c01d2acc.chunk.css",
+    "main.js": "/Quera-tourguide/static/js/main.43f9f15b.chunk.js",
+    "main.js.map": "/Quera-tourguide/static/js/main.43f9f15b.chunk.js.map",
+    "runtime-main.js": "/Quera-tourguide/static/js/runtime-main.3c1619f7.js",
+    "runtime-main.js.map": "/Quera-tourguide/static/js/runtime-main.3c1619f7.js.map",
+    "static/js/2.21f0c83b.chunk.js": "/Quera-tourguide/static/js/2.21f0c83b.chunk.js",
+    "static/js/2.21f0c83b.chunk.js.map": "/Quera-tourguide/static/js/2.21f0c83b.chunk.js.map",
+    "index.html": "/Quera-tourguide/index.html",
+    "precache-manifest.50eee98f3b2d8b76541c6add1d7c10bf.js": "/Quera-tourguide/precache-manifest.50eee98f3b2d8b76541c6add1d7c10bf.js",
+    "service-worker.js": "/Quera-tourguide/service-worker.js",
+    "static/css/main.c01d2acc.chunk.css.map": "/Quera-tourguide/static/css/main.c01d2acc.chunk.css.map",
+    "static/js/2.21f0c83b.chunk.js.LICENSE.txt": "/Quera-tourguide/static/js/2.21f0c83b.chunk.js.LICENSE.txt",
+    "static/media/class1.jpg": "/Quera-tourguide/static/media/class1.0444ac73.jpg",
+    "static/media/codeicon.png": "/Quera-tourguide/static/media/codeicon.42aada5a.png",
+    "static/media/stariconorange.png": "/Quera-tourguide/static/media/stariconorange.ffd46cf9.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3c1619f7.js",
+    "static/js/2.21f0c83b.chunk.js",
+    "static/css/main.c01d2acc.chunk.css",
+    "static/js/main.43f9f15b.chunk.js"
+  ]
+}
